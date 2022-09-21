@@ -7,9 +7,10 @@
     <title>Document</title>
     <script src="js-file.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
+    <div class="side-bar">
         <div class="title">
             <div class="square one"></div>
             <div class="square two"></div>
@@ -17,6 +18,7 @@
             <div class="square four"></div>
             <div class="dash">Dashboard</div>
         </div>
+
         <div class="menu">
             <div class="icon"></div>
             <button>Home</button>
@@ -31,6 +33,7 @@
             <div class="icon"></div>
             <button>Communities</button>
         </div>
+
         <div class="settings">
             <div class="icon"></div>
             <button>Settings</button>
@@ -40,9 +43,38 @@
             <button>Privacy</button>
         </div>
     </div>
-    <div class="header">
 
+    <div class="header">
+        <div class="search-bar">
+            <label for="search"><img src="media/magnify.png" alt="magnify glass" height="20px"></label>
+            <input type="search" id="search" name="search">
+        </div>
+
+        <div class="notifications">
+            <button><img src="media/bell-ring.png" alt="bell ring" height="20px"></button>
+            <button><img class="avatar" src="media/dummy.jpeg" alt="pug picture" height="35px"></button>
+            <output id="output" style="font-size: 0.8rem;">Jane Smith</output>
+        </div>
+
+        <div class="name">
+            <img class="avatar" src="media/dummy.jpeg" alt="pug picture" height="60px">
+            <div style="font-weight: bold; font-size:0.7rem;">
+                Hi there, 
+                <br>
+                <div style="font-weight: bold; font-size: large;">
+                    <output id="output">Jane Smith</output>
+                    (@<output id="output">Jane Smith</output>)
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+        </div>
     </div>
+
     <div class="content">
 
     </div>
