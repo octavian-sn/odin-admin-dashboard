@@ -240,3 +240,23 @@ button {
 .trending-project div span {
     color: rgba(0, 0, 0, 0.596);
 }
+
+/* Credits */
+.git {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    gap: 10px;
+    font-weight:500;
+    color: rgb(0, 0, 0);
+}
+
+.git>a:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
