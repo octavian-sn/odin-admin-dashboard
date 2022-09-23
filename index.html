@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <script src="js-file.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
@@ -53,7 +53,7 @@
         <div class="notifications">
             <button><img src="media/bell-ring.png" alt="bell ring" height="20px"></button>
             <button><img class="avatar" src="media/dummy.jpeg" alt="pug picture" height="35px"></button>
-            <output id="output" style="font-size: 0.8rem;">Jane Smith</output>
+            <output class="output" style="font-size: 0.8rem;">Jane Smith</output>
         </div>
 
         <div class="name">
@@ -62,8 +62,8 @@
                 Hi there, 
                 <br>
                 <div style="font-weight: bold; font-size: large;">
-                    <output id="output">Jane Smith</output>
-                    (@<output id="output">Jane Smith</output>)
+                    <output>Jane Smith</output>
+                    (@<output>Jane Smith</output>)
                 </div>
             </div>
         </div>
@@ -175,7 +175,9 @@
             <div class="trending-project">
                 <img class="avatar" src="media/dummy.jpeg" alt="profile icon" height="40px">
                 <div>
-                    @morgan <br>
+                    @<strong>
+                        <output>morgan</output>
+                    </strong> <br>
                     <span>Super Cool Project</span>
                 </div>
             </div>
